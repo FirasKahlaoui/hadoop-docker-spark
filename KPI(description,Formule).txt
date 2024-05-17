@@ -1,0 +1,27 @@
+*Moyenne des salaires par année de travail:
+  -Description : (Mesure la moyenne des salaires pour chaque année de travail, ce qui permet de suivre l'évolution 	des salaires au fil du temps.)
+  -Formule : (Somme des salaires pour une année donnée / Nombre total d'employés pour cette année)
+
+*Écart type des salaires pour évaluer la dispersion des données salariales:
+  -Description : (Évalue la dispersion des données salariales en calculant l'écart type des salaires, ce qui indique la 	variabilité des salaires par rapport à la moyenne.)
+  -Formule : (Racine carrée de la variance des salaires, qui est la moyenne des carrés des écarts par rapport à la 	moyenne.)
+
+*Salaire par Niveau d'Expérience:
+  -Description : (Compare les salaires moyens entre différents niveaux d'expérience, permettant de comprendre comment les 	salaires évoluent en fonction de l'expérience professionnelle.)
+  -Formule : (Moyenne des salaires pour chaque niveau d'expérience)
+
+*Salaire par Titre de Poste:
+  -Description : (Examine les différences de salaires moyens entre différents titres de poste, fournissant des 	informations sur la structure de rémunération de l'entreprise.)
+  -Formule : (Moyenne des salaires pour chaque titre de poste)
+
+*Salaire par Type d'Emploi:
+  -Description : (Compare les salaires moyens entre différents types d'emploi, tels que le temps plein, le temps partiel, 	ou contractuel, pour évaluer les écarts de rémunération.)
+  -Formule : (Moyenne des salaires pour chaque type d'emploi)
+
+*Salaire par Taille de l'Entreprise:
+  -Description : (Analyse comment la taille de l'entreprise influence les niveaux de salaire moyens, ce qui peut fournir 	des indications sur la politique de rémunération de l'entreprise.)
+  -Formule : (Moyenne des salaires pour chaque taille d'entreprise)
+
+*Impact du Télétravail sur le Salaire:
+  -Description : (Examine si les arrangements de télétravail ont un impact sur les niveaux de salaire, permettant de 	comprendre comment les politiques de travail à distance affectent la rémunération.)
+  -Formule : (Moyenne des salaires pour chaque ratio de travail à distance)

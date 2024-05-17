@@ -1,0 +1,44 @@
+import org.apache.spark.sql.functions._
+
+- Définir le chemin du fichier:
+
+val filePath = "file:///home/firas/salaries.csv"
+
+- Lire le fichier CSV dans un DataFrame:
+
+val df = spark.read.option("header", "true").csv(filePath)
+
+- Calculer le salaire moyen par année de travail:
+
+val averageSalaryByYear = df.groupBy("work_year").agg(avg("salary").alias("salaire_moyen_annuel"))
+averageSalaryByYear.show()
+
+- Calculer l'écart type des salaires:
+
+val salaryStdDev = df.agg(stddev("salary").alias("ecart_type_salaire"))
+salaryStdDev.show()
+
+- Comparer les salaires par niveau d'expérience:
+
+val salaryByExperience = df.groupBy("experience_level").agg(avg("salary").alias("salaire_moyen_par_experience"))
+salaryByExperience.show()
+
+- Comparer les salaires par titre de poste:
+
+val salaryByJobTitle = df.groupBy("job_title").agg(avg("salary").alias("salaire_moyen_par_poste"))
+salaryByJobTitle.show()
+
+- Comparer les salaires par type d'emploi:
+
+val salaryByEmploymentType = df.groupBy("employment_type").agg(avg("salary").alias("salaire_moyen_par_type_emploi"))
+salaryByEmploymentType.show()
+
+- Comparer les salaires par taille de l'entreprise:
+
+val salaryByCompanySize = df.groupBy("company_size").agg(avg("salary").alias("salaire_moyen_par_taille_entreprise"))
+salaryByCompanySize.show()
+
+- Analyser l'impact du travail à distance sur le salaire:
+
+val salaryByRemoteRatio = df.groupBy("remote_ratio").agg(avg("salary").alias("salaire_moyen_par_ratio_teletravail"))
+salaryByRemoteRatio.show()
